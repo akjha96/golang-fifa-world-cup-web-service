@@ -123,7 +123,6 @@ func PrintUsage() {
 	usage := `
 	
 	GETting:
-
 	curl -i http://localhost:8000/
 	curl -i http://localhost:8000/winners
 	curl -i http://localhost:8000/winners?year=1970
@@ -145,7 +144,6 @@ func PrintUsage() {
 	curl -i http://localhost:8000/winners
 	
 	POSTing with invalid data:
-
 	curl -i -X POST %NEXTLINE%
 	-H "X-ACCESS-TOKEN: %TOKEN%" %NEXTLINE%
 	-d "{\"country\":\"Russia\", \"year\": 1984}" http://localhost:8000/winners
